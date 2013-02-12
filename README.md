@@ -54,3 +54,35 @@ Preparation:
 
 [1]: https://groups.google.com/forum/?fromgroups=#!topic/google-calendar-api/MySzyAXq12Q
 [2]: http://stackoverflow.com/questions/11529595/is-a-service-account-the-right-credentials-for-querying-google-bigquery-in-node
+
+Usage example:
+------------------------
+`````javascript
+const request = require('request');
+const gaccount = require('./google-serviceaccount');
+
+const calRoot = "https://www.googleapis.com/calendar/v3";
+
+gaccount.auth(function(err, access_token){
+
+    var token = "?access_token="+access_token;
+
+    request.get({
+        url:calRoot+"/users/me/calendarList"+token,
+        json:true
+        }, function(err, res, body){
+
+            for(var c=0; c<body.items.length; c++){
+                console.log(body.items[c]);
+
+                request.get({
+                    url:calRoot+"/calendars/"+body.items[c].id+"/events"+token,
+                    json:true
+                    }, function(err, res, cal){
+                        console.log(cal);
+                });
+            }
+    })
+
+});
+`````
