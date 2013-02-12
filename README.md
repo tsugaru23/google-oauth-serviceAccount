@@ -3,7 +3,7 @@ google-auth-serviceAccount
 Motivation:
 ------------------------
 
-Wanted to accesss my personal calendar, NOT the one of Google Apps, and found no good example for node.js with service account without any interaction.
+Wanted to accesss my personal calendar, NOT the one of Google Apps, and found no good example for node.js with [service account][3] without any interaction.
 
 Preparation:
 ------------------------
@@ -55,10 +55,12 @@ Preparation:
     if successfull, you'll see an access token:
     <pre>token:ya29.AHES6ZSfxRWLEv9vfusipvawSS-55oQyMAGxF3kbRGsgGMTo</pre>
 
-7.  Enjoy. You may try listEvents.js.
+7.  Enjoy with [calendar APIs][4]. You may try listEvents.js.
 
 [1]: https://groups.google.com/forum/?fromgroups=#!topic/google-calendar-api/MySzyAXq12Q
 [2]: http://stackoverflow.com/questions/11529595/is-a-service-account-the-right-credentials-for-querying-google-bigquery-in-node
+[3]: https://developers.google.com/accounts/docs/OAuth2ServiceAccount
+[4]: https://developers.google.com/google-apps/calendar/v3/reference
 
 Usage example:
 ------------------------
