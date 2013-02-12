@@ -1,5 +1,10 @@
 google-auth-serviceAccount
 ==========================
+Motivation:
+------------------------
+
+Wanted to accesss my personal calendar, NOT the one of Google Apps, and found no good example for node.js with service account without any interaction.
+
 Preparation:
 ------------------------
 1.  Create your service account and enable calendar access(thanks to [this post][1]):
