@@ -1,0 +1,9 @@
+{
+ "keyFile": "key.pem"
+,"expiresInMinuteas": 60
+,"claim":{
+	 "iss":"yourProjectID@developer.gserviceaccount.com",
+	,"scope":"https://www.googleapis.com/auth/calendar"
+	,"aud":"https://accounts.google.com/o/oauth2/token"
+ }
+}
