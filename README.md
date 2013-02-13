@@ -1,9 +1,14 @@
-google-auth-serviceAccount
+google-oauth-serviceaccount
 ==========================
 Motivation:
 ------------------------
 
 Wanted to accesss my personal calendar, NOT the one of Google Apps, and found no good example for node.js with [service account][3] without any interaction.
+
+Install:
+------------------------
+
+    npm install google-oauth-serviceaccount
 
 Preparation:
 ------------------------
