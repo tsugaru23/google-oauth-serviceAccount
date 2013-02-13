@@ -10,11 +10,16 @@ logger.debug(new Date().toString());
 var auth = function(callback) {
 
     config.argv().env().file({
-        file: 'config.json'
+        file: 'oauth-config.json'
     });
     config.defaults({
         keyFile: "key.pem",
-        expiresInMinutes: 60
+        expiresInMinutes: 60,
+        claim:{
+             "iss":"yourProjectID@developer.gserviceaccount.com"
+            ,"scope":"https://www.googleapis.com/auth/calendar"
+            ,"aud":"https://accounts.google.com/o/oauth2/token"
+         }
     });
     var keyFile = config.get('keyFile');
     if(!fs.existsSync(keyFile)){

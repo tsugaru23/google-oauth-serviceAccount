@@ -5,12 +5,16 @@
         "name": "tsugaru23",
         "email": "tsugaru23@gmail.com"
 },
-"main": "mecab",
+"main": "google-oauth-serviceAccount",
 "dependencies": {
     "crypto":"",
     "nconf":"",
     "request":"",
     "winston":""
+},
+"config":{
+     "keyFile": "key.pem"
+    ,"expiresInMinuteas": 60
 },
 "readmeFilename": "README.md",
 "description": "oauth module to retrive an access token with google service account",

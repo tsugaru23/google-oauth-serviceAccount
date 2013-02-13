@@ -1,5 +1,5 @@
 const request = require('request');
-const gaccount = require('./lib/google-oauth-serviceAccount');
+const gaccount = require('./google-oauth-serviceAccount');
 
 const calRoot = "https://www.googleapis.com/calendar/v3";
 
@@ -12,6 +12,7 @@ gaccount.auth(function(err, access_token){
         json:true
         }, function(err, res, body){
 
+            if(body.items)
             for(var c=0; c<body.items.length; c++){
                 console.log(body.items[c]);
 
