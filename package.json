@@ -5,7 +5,7 @@
         "name": "tsugaru23",
         "email": "tsugaru23@gmail.com"
 },
-"main": "google-oauth-serviceAccount",
+"main": "google-oauth-serviceaccount",
 "dependencies": {
     "crypto":"",
     "nconf":"",

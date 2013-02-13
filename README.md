@@ -27,17 +27,13 @@ Preparation:
     $ openssl pkcs12 -in yourkey.p12 -out yourkey.pem -nodes<br/>
     type "notasecret" for password.
 
-3.  Install dependencies
-
-    $ npm install crypto request nconf
-
-4.  Share the calendar with your developer account
+3.  Share the calendar with your developer account
 
     Calendar "Settings" -> "Share this calendar", at "Share with specific people",
     put the email address of developer account choosing a permission you want, then "add person".
     The address should be like "yourProjectId@developer.gserviceaccount.com".
 
-5.  Edit config.json and place key.pem which generated in step 2.
+4.  Edit oahtu-config.json and place key.pem which generated in step 2.
 <pre>
     {
      "keyFile": "key.pem"
@@ -50,12 +46,12 @@ Preparation:
     }
 </pre>
 
-6.  Test with test.js.
+5.  Test with test.js.
 
     if successfull, you'll see an access token:
     <pre>token:ya29.AHES6ZSfxRWLEv9vfusipvawSS-55oQyMAGxF3kbRGsgGMTo</pre>
 
-7.  Enjoy with [calendar APIs][4]. You may try listEvents.js.
+6.  Enjoy with [calendar APIs][4]. You may try listEvents.js.
 
 [1]: https://groups.google.com/forum/?fromgroups=#!topic/google-calendar-api/MySzyAXq12Q
 [2]: http://stackoverflow.com/questions/11529595/is-a-service-account-the-right-credentials-for-querying-google-bigquery-in-node
@@ -66,7 +62,7 @@ Usage example:
 ------------------------
 `````javascript
 const request = require('request');
-const gaccount = require('./google-serviceaccount');
+const gaccount = require('./google-oauth-serviceaccount');
 
 const calRoot = "https://www.googleapis.com/calendar/v3";
 

@@ -1,5 +1,5 @@
 const request = require('request');
-const gaccount = require('./google-oauth-serviceAccount');
+const gaccount = require('./google-oauth-serviceaccount');
 
 const calRoot = "https://www.googleapis.com/calendar/v3";
 
