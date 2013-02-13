@@ -1,0 +1,25 @@
+{
+"name": "google-oauth-serviceAccount",
+"version": "0.0.1",
+"author": {
+        "name": "tsugaru23",
+        "email": "tsugaru23@gmail.com"
+},
+"main": "mecab",
+"dependencies": {
+    "crypto":"",
+    "nconf":"",
+    "request":"",
+    "winston":""
+},
+"readmeFilename": "README.md",
+"description": "oauth module to retrive an access token with google service account",
+"repository": {
+    "type" : "git",
+    "url": "https://github.com/tsugaru23/google-oauth-serviceAccount.git"
+},
+"bugs" : {
+        "mail" : "tsugaru23@gmail.com" ,
+        "web" : "https://github.com/tsugaru23/google-oauth-serviceAccount/issues"
+}
+}

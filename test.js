@@ -1,4 +1,4 @@
-const gaccount = require('./google-serviceaccount');
+const gaccount = require('./lib/google-oauth-serviceAccount');
 
 gaccount.auth(function(err, access_token){
     if(err)throw err;
