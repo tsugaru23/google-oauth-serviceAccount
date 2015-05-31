@@ -38,7 +38,7 @@ Preparation:
     put the email address of developer account choosing a permission you want, then "add person".
     The address should be like "yourProjectId@developer.gserviceaccount.com".
 
-4.  Edit oahtu-config.json and place key.pem which generated in step 2.
+4.  Edit oauth-config.json and place key.pem which generated in step 2.
 <pre>
     {
      "keyFile": "key.pem"
